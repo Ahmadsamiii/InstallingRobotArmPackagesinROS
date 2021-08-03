@@ -66,14 +66,23 @@ Install ROS Melodic packages with the following steps:
 <!-->
       sudo apt install ros-melodic-desktop-full
       
+ ![image](https://user-images.githubusercontent.com/85820553/128097688-d2e69847-64c3-4c26-bbb2-cebdd169ffb7.png)
+
+      
  1.6 Environment setup:
  
 <!-->
       echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 
+![image](https://user-images.githubusercontent.com/85820553/128097817-52d30317-2010-4d3f-ae91-04cec9dcbbf3.png)
+
+
 
 <!-->
       source ~/.bashrc
+      
+ ![image](https://user-images.githubusercontent.com/85820553/128097856-0eb6a773-eff8-4a2e-b871-a671e3afa16a.png)
+
  or
  
  <!-->
@@ -96,6 +105,9 @@ or
 <!-->
       sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
       
+![image](https://user-images.githubusercontent.com/85820553/128097911-b827e9a4-8c74-4b12-979b-b8af07208af3.png)
+
+      
 
 1.7.1 Initialize rosdep:
 
@@ -103,9 +115,15 @@ or
 <!-->
       sudo apt install python-rosdep
 
+![image](https://user-images.githubusercontent.com/85820553/128097954-4839b9fb-6b3b-4e62-8d56-373a05ca65c9.png)
+
+
 
 <!-->
       sudo rosdep init
+      
+ ![image](https://user-images.githubusercontent.com/85820553/128098001-77315e38-3fb9-4df8-906c-fe6c2f5e9915.png)
+
       
       
 <!-->
