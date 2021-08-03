@@ -62,5 +62,58 @@ Install ROS Melodic packages with the following steps:
 ![image](https://user-images.githubusercontent.com/85820553/128096070-ff5c89bb-7783-4a56-81f9-a424f10df9c6.png)
 
 
+1.5 Desktop-Full Install:
+<!-->
+      sudo apt install ros-melodic-desktop-full
+      
+ 1.6 Environment setup:
+ 
+<!-->
+      echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+
+
+<!-->
+      source ~/.bashrc
+ or
+ 
+ <!-->
+      source /opt/ros/melodic/setup.bash
+
+or
+
+<!-->
+      echo "source /opt/ros/melodic/setup.zsh" >> ~/.zshrc
+
+
+<!-->
+      source ~/.zshrc
+
+
+ 1.7 Dependencies for building packages:
+
+
+
+<!-->
+      sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+      
+
+1.7.1 Initialize rosdep:
+
+
+<!-->
+      sudo apt install python-rosdep
+
+
+<!-->
+      sudo rosdep init
+      
+      
+<!-->
+      rosdep update
+
+
+ 
+ 
+
 
    
