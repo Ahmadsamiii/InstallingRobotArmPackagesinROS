@@ -137,8 +137,67 @@ or
 
 
 
- 
- 
+- **Step-4:**
+Create a workspace by using catkin_make with the following steps:
+
+  1. Prerequisites:
+
+<!-->
+      source /opt/ros/melodic/setup.bash
+      
+ ![image](https://user-images.githubusercontent.com/85820553/128148959-e575584e-bbd9-48d8-b626-7ca56999729a.png)
 
 
-   
+
+1.1 Create and build a catkin workspace:
+
+
+<!-->
+      mkdir -p ~/catkin_ws/src
+
+![image](https://user-images.githubusercontent.com/85820553/128149920-96bcc45c-3b33-4e97-a4fe-15f9d51805ab.png)
+
+
+
+<!-->
+      cd ~/catkin_ws/
+      
+ ![image](https://user-images.githubusercontent.com/85820553/128150073-4af9d6d2-d2f8-4c85-a5be-738817bb9b8b.png)
+
+
+
+<!-->
+      catkin_make
+
+![image](https://user-images.githubusercontent.com/85820553/128150415-be5467af-8846-45ee-b6e6-1eba7babaf66.png)
+ 
+
+![image](https://user-images.githubusercontent.com/85820553/128150460-3d20d17d-7876-45c4-9bba-8019db71e2b4.png)
+
+
+![image](https://user-images.githubusercontent.com/85820553/128150519-2c882520-8428-4781-91af-f6c734949ab0.png)
+
+
+![image](https://user-images.githubusercontent.com/85820553/128150590-9282e1dd-e617-423b-ae23-d7738944cc79.png)
+
+
+
+
+<!-->
+      echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+      
+      
+      
+![image](https://user-images.githubusercontent.com/85820553/128152391-83c82d8a-8cf3-431d-bd8b-ecaa2f4ec5d8.png)
+
+
+
+<!-->
+      source ~/.bashrc
+
+![image](https://user-images.githubusercontent.com/85820553/128152462-6887e0ea-8557-4112-af8a-1f590cf3bc31.png)
+
+
+
+- **Step-5:**
+Installing the package arduino_robot_arm:
