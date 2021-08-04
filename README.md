@@ -22,21 +22,21 @@
 - **Step-3:**
 Install ROS Melodic packages with the following steps:
 
-  1- Installation:
+  3.1- Installation:
   
-   1.1 Configure Ubuntu repositories to allow "restricted," "universe," and "multiverse", [use this link to help you](https://youtu.be/NoVWMSCEPoQ).
+   3.1.1 Configure Ubuntu repositories to allow "restricted," "universe," and "multiverse", [use this link to help you](https://youtu.be/NoVWMSCEPoQ).
    
    ![image](https://user-images.githubusercontent.com/85820553/128093579-49b1307b-5dd3-48fe-8325-cbe3e4f4744e.png)
 
 
-   1.2 Setup sources.list using the following command:
+   3.1.2 Setup sources.list using the following command:
       
       sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
       
    ![image](https://user-images.githubusercontent.com/85820553/128093613-bfdcd5ee-0ed6-43f2-bec0-985b727fd266.png)
 
    
-   1.3 Setup keys:
+   3.1.3 Setup keys:
 
 <!-->
       sudo apt install curl
@@ -51,7 +51,7 @@ Install ROS Melodic packages with the following steps:
 
       
       
-   1.4 Setup keys:
+   3.1.4 Setup keys:
 
 <!-->
       sudo apt update
@@ -62,14 +62,14 @@ Install ROS Melodic packages with the following steps:
 ![image](https://user-images.githubusercontent.com/85820553/128096070-ff5c89bb-7783-4a56-81f9-a424f10df9c6.png)
 
 
-1.5 Desktop-Full Install:
+3.1.5 Desktop-Full Install:
 <!-->
       sudo apt install ros-melodic-desktop-full
       
  ![image](https://user-images.githubusercontent.com/85820553/128097688-d2e69847-64c3-4c26-bbb2-cebdd169ffb7.png)
 
       
- 1.6 Environment setup:
+ 3.1.6 Environment setup:
  
 <!-->
       echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
@@ -98,7 +98,7 @@ or
       source ~/.zshrc
 
 
- 1.7 Dependencies for building packages:
+ 3.1.7 Dependencies for building packages:
 
 
 
@@ -109,7 +109,7 @@ or
 
       
 
-1.7.1 Initialize rosdep:
+3.1.7.1 Initialize rosdep:
 
 
 <!-->
@@ -140,7 +140,7 @@ or
 - **Step-4:**
 Create a workspace by using catkin_make with the following steps:
 
-  1. Prerequisites:
+4.1 Prerequisites:
 
 <!-->
       source /opt/ros/melodic/setup.bash
@@ -149,7 +149,7 @@ Create a workspace by using catkin_make with the following steps:
 
 
 
-1.1 Create and build a catkin workspace:
+4.2 Create and build a catkin workspace:
 
 
 <!-->
@@ -201,3 +201,123 @@ Create a workspace by using catkin_make with the following steps:
 
 - **Step-5:**
 Installing the package arduino_robot_arm:
+
+5.1 Add the “arduino_robot_arm” package to “src” folder:
+
+
+<!-->
+      cd ~/catkin_ws/src
+      
+ ![image](https://user-images.githubusercontent.com/85820553/128156542-794d6264-0c5e-4151-b97a-2eebad96ebd4.png)
+     
+      
+<!-->
+      sudo apt install git
+
+
+![image](https://user-images.githubusercontent.com/85820553/128158437-f4065d62-3ef3-4807-845a-db693bb00209.png)
+
+
+
+<!-->
+      git clone https://github.com/smart-methods/arduino_robot_arm 
+      
+      (Already cloned before)
+      ![image](https://user-images.githubusercontent.com/85820553/128158523-c0d4fbce-f73c-458b-ab3c-2a43009cc58d.png)
+
+
+
+
+5.2 Install all the dependencies:
+
+
+
+<!-->
+      cd ~/catkin_ws
+      
+![image](https://user-images.githubusercontent.com/85820553/128158813-3a0e6874-8a15-43f4-a375-b89983eaea00.png)
+
+
+      
+<!-->
+      rosdep install --from-paths src --ignore-src -r -y
+      
+     
+ ![image](https://user-images.githubusercontent.com/85820553/128166700-84c74241-87b9-4437-9b0c-eb04d1c687c6.png)
+ 
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/85820553/128166771-6a368db6-6796-41e0-95d1-116bfa2cb547.png)
+
+
+
+
+
+<!-->
+      sudo apt-get install ros-melodic-moveit
+
+![image](https://user-images.githubusercontent.com/85820553/128167160-ca1fe301-4197-4529-b049-c3f880a86257.png)
+
+
+![image](https://user-images.githubusercontent.com/85820553/128167232-b142732a-8d03-47c1-b9aa-b55422c13b41.png)
+
+
+![image](https://user-images.githubusercontent.com/85820553/128167206-a8ae3e66-a643-497a-b993-0ce52a3f44b9.png)
+
+      
+      
+      
+
+<!-->
+      sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
+      
+      ![image](https://user-images.githubusercontent.com/85820553/128167571-afe5e259-97e4-4929-bdf1-bdaf1cca01ad.png)
+
+
+
+
+
+<!-->
+      sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
+
+![image](https://user-images.githubusercontent.com/85820553/128167701-7b235126-1e1c-43f1-a35c-d6cb37176b63.png)
+
+      
+      
+      
+      
+<!-->
+      sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control 
+      ![image](https://user-images.githubusercontent.com/85820553/128167798-742efcb1-100c-4444-bce9-41bb8b6d4e27.png)
+
+
+
+
+5.3 Compile the package:
+
+
+
+<!-->
+      catkin_make
+
+![image](https://user-images.githubusercontent.com/85820553/128168063-59c85597-322e-4de3-b8e7-95f4e05ebe99.png)
+
+
+
+5.4 Controlling the motors:
+
+<!-->
+      roslaunch robot_arm_pkg check_motors.launch
+      
+      ![image](https://user-images.githubusercontent.com/85820553/128168483-435adc84-77d5-4d5e-bf4b-fa8c4af31c49.png)
+      
+      ![image](https://user-images.githubusercontent.com/85820553/128168842-f55e91c2-f05a-45c9-9fcc-ae4bc15b4386.png)
+
+
+
+
+5.5 Controlling the motors joint_state_publisher:
+
+
+<!-->
+      rqt_graph
