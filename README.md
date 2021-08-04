@@ -115,6 +115,8 @@ or
 <!-->
       sudo apt install python-rosdep
 
+
+
 ![image](https://user-images.githubusercontent.com/85820553/128097954-4839b9fb-6b3b-4e62-8d56-373a05ca65c9.png)
 
 
@@ -128,6 +130,8 @@ or
       
 <!-->
       rosdep update
+
+
 
 ![image](https://user-images.githubusercontent.com/85820553/128098113-38c56887-7e19-451a-b87c-e9e03f000a4c.png)
 
@@ -223,7 +227,7 @@ Installing the package arduino_robot_arm:
       git clone https://github.com/smart-methods/arduino_robot_arm 
       
       (Already cloned before)
-      ![image](https://user-images.githubusercontent.com/85820553/128158523-c0d4fbce-f73c-458b-ab3c-2a43009cc58d.png)
+  ![image](https://user-images.githubusercontent.com/85820553/128158523-c0d4fbce-f73c-458b-ab3c-2a43009cc58d.png)
 
 
 
@@ -234,6 +238,7 @@ Installing the package arduino_robot_arm:
 
 <!-->
       cd ~/catkin_ws
+
       
 ![image](https://user-images.githubusercontent.com/85820553/128158813-3a0e6874-8a15-43f4-a375-b89983eaea00.png)
 
@@ -271,7 +276,7 @@ Installing the package arduino_robot_arm:
 <!-->
       sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
       
-      ![image](https://user-images.githubusercontent.com/85820553/128167571-afe5e259-97e4-4929-bdf1-bdaf1cca01ad.png)
+![image](https://user-images.githubusercontent.com/85820553/128167571-afe5e259-97e4-4929-bdf1-bdaf1cca01ad.png)
 
 
 
@@ -309,9 +314,9 @@ Installing the package arduino_robot_arm:
 <!-->
       roslaunch robot_arm_pkg check_motors.launch
       
-      ![image](https://user-images.githubusercontent.com/85820553/128168483-435adc84-77d5-4d5e-bf4b-fa8c4af31c49.png)
+ ![image](https://user-images.githubusercontent.com/85820553/128168483-435adc84-77d5-4d5e-bf4b-fa8c4af31c49.png)
       
-      ![image](https://user-images.githubusercontent.com/85820553/128168842-f55e91c2-f05a-45c9-9fcc-ae4bc15b4386.png)
+ ![image](https://user-images.githubusercontent.com/85820553/128168842-f55e91c2-f05a-45c9-9fcc-ae4bc15b4386.png)
 
 
 
@@ -321,6 +326,8 @@ Installing the package arduino_robot_arm:
 
 <!-->
       rqt_graph
+
+
 ![image](https://user-images.githubusercontent.com/85820553/128173271-4a9e59b2-5e8c-4e3e-abbb-5044c683b895.png)
 
 
